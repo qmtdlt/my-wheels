@@ -6,7 +6,7 @@ Math.formatFloat = function (f, digit) {
 }
 
 // 2 将参数，转为两位小数字符串，返回
-function formatMoney(text) {
+Math.formatMoney = function (text) {
     if (isEmpty(text)) {
         return;
     }

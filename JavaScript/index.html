@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://raw.githubusercontent.com/qmtdlt/my-wheels/master/JavaScript/Math.js"></script>
+</head>
+<body>
+    <script>
+        function test()
+        {
+            var test1 = document.getElementById('test1');
+            var test2 = document.getElementById('test2');
+            test2.value = Math.formatMoney(test1.value);
+        }    
+    </script>
+    <input id="test1"/>
+    <input type="button" onclick="test()" value="test"/>
+    <input id="test2"/>
+</body>
+</html>

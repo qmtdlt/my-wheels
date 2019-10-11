@@ -26,3 +26,4 @@ Math.formatMoney = function (text) {
         return '';
     }
 }
+

@@ -4,6 +4,7 @@
 
 # 地图
 - C#
+  - 算法、文件io操作等语言层面
   - winform
   - wpf
   - .net framework mvc

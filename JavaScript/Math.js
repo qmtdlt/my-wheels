@@ -1,6 +1,8 @@
 // 1 处理js精度防范
 // f为待处理参数，digit为小数点后位数
 Math.formatFloat = function (f, digit) {
+    if(isEmpty(digit))
+        digit = 2;
     var m = Math.pow(10, digit);//10的digit次方
     return Math.round(f * m, 10) / m;
 }

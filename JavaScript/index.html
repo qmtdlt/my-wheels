@@ -5,20 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="../JavaScript/Math.js" s></script>
-    <script src="../JavaScript/OperateObj.js" s></script>
+    <script src="../JavaScript/Math.js"></script>
+    <script src="../JavaScript/OperateObj.js" ></script>
+    <script src="../JavaScript/tinytools.js"></script>
 </head>
 <body>
     <script>
-        function test()
+        function test1()
         {
             var test1 = document.getElementById('test1');
             var test2 = document.getElementById('test2');
-            test2.value = Math.formatMoney(test1.value);
+            test2.value = CheckIdNumber(test1.value);
+        }   
+        function test2()
+        {
+            var test1 = document.getElementById('test3');
+            var test2 = document.getElementById('test4');
+            test2.value = formatMoney(test1.value);
+        }  
+        function test3()
+        {
+            var test1 = document.getElementById('test5');
+            var test2 = document.getElementById('test6');
+            var test3 = document.getElementById('test7');
+            test2.value = parseFloat(36.89+6.23);
+            test3.value = Math.formatFloat(parseFloat(36.89+6.23));
         }    
     </script>
+    <label>身份证验证</label><br />
     <input id="test1"/>
-    <input type="button" onclick="test()" value="test"/>
+    <input type="button" onclick="test1()" value="test"/>
     <input id="test2"/>
+    <br />
+    
+    <label>两位数金钱</label><br />
+    <input id="test3"/>
+    <input type="button" onclick="test2()" value="test"/>
+    <input id="test4"/>
+
+    <br />
+    <label>浮点数精度处理</label><br />
+    <label>36.89+6.23</label>
+    <input type="button" onclick="test3()" value="test"/>
+    直接parseFLoat结果
+    <input id="test6"/>
+    处理后结果
+    <input id="test7"/>
 </body>
 </html>
